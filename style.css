@@ -9,12 +9,22 @@
      sans-serif;
 }
 
+all {
+    display: flex;
+    align-items: center;
+}
+
 body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
     margin: 0px;
     font-family: Arial;
     color: #ecf0f1;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+
+
 
 #header {
     background: radial-gradient(ellipse at bottom, #3867d6 0%,#4b6584 100%);
@@ -26,11 +36,86 @@ body {
     padding-bottom: 20px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 200%;
+    padding-bottom: 10px;
+}
+
+.card {
+    align-self: center;
+    position: relative;
+    width: 350px;
+    height: 450px;
+    background: #4b6584;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    margin-left: 41%;
+}
+
+
+
+.img {
+    position: absolute;
+    top: -20px;
+    width: 350px;
+    height: 100px;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+}
+
+.img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card .content .details {
+    padding: 10px;
+    padding-bottom: 250px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card .content .details h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #ecf0f1;
+    line-height: 1.2em;
+}
+
+.card .content .details .data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .content .details .data h3 {
+    font-size: 1em;
+}
+
 #stars {
     width: 1px;
     height: 1px;
     background: transparent;
-    animation: animStar 50s linear infinite;
+    animation: animStar 100s linear infinite;
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
     1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
     36px 1546px #fff, 132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff,
@@ -208,6 +293,7 @@ body {
     1335px 872px #fff, 1647px 1298px #fff, 1233px 1387px #fff, 698px 1036px #fff,
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
     696px 1654px #fff, 1144px 60px #fff;
+    
 }
 
 #stars:after {
@@ -400,7 +486,7 @@ body {
     width: 2px;
     height: 2px;
     background: transparent;
-    animation: animStar 100s linear infinite;
+    animation: animStar 200s linear infinite;
     box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
     878px 340px #fff, 569px 1832px #fff, 1422px 1684px #fff, 1946px 1907px #fff,
     121px 979px #fff, 1044px 1069px #fff, 463px 381px #fff, 423px 112px #fff,
@@ -518,7 +604,7 @@ body {
     width: 3px;
     height: 3px;
     background: transparent;
-    animation: animStar 150s linear infinite;
+    animation: animStar 300s linear infinite;
     box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
     948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
     1268px 1635px #fff, 1820px 598px #fff, 642px 1900px #fff, 296px 57px #fff,
