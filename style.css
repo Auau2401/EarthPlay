@@ -26,89 +26,43 @@ body {
 
 
 
-#header {
-    background: radial-gradient(ellipse at bottom, #3867d6 0%,#4b6584 100%);
+#header #earthplay {
+    background: transparent;
     height: auto;
     font-size: 350%;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     padding-top: 10px;
     padding-bottom: 20px;
+    padding-left: 50px;
+    display: inline-block;
 }
 
 h1 {
-    text-align: center;
-    font-size: 200%;
+    text-align: left;
+    font-size: 250%;
     padding-bottom: 10px;
-}
-
-.card {
-    align-self: center;
-    position: relative;
-    width: 350px;
-    height: 450px;
-    background: #4b6584;
-    border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-    transition: 0.5s;
-    margin-left: 41%;
+    padding-top: 100px;
+    padding-left: 400px;
 }
 
 
-
-.img {
-    position: absolute;
-    top: -20px;
-    width: 350px;
-    height: 100px;
-    background: #fff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+.Text {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1100px;
 }
 
-.img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card .content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.card .content .details {
-    padding: 10px;
-    padding-bottom: 250px;
-    text-align: center;
-    width: 100%;
-    transition: 0.5s;
-}
-
-.card .content .details h2 {
-    font-size: 1.25em;
-    font-weight: 600;
+#header a {
+    width: 5%;
+    display: inline-block;
+    font-size: 120%;
+    padding-top: 45px;
+    float: right;
+    text-align: right;
+    padding-right: 80px;
+    text-decoration: none;
     color: #ecf0f1;
-    line-height: 1.2em;
-}
-
-.card .content .details .data {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card .content .details .data h3 {
-    font-size: 1em;
 }
 
 #stars {
